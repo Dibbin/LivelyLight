@@ -7,7 +7,6 @@
 //config
 #define LED_COUNT 5
 #define LED_PIN 11
-#define PIR_COUNT 1
 #define PIR_PIN 2
 #define BRIGHTNESS 255 //0 to 255
 unsigned long timeDelay= 2500;
@@ -71,7 +70,6 @@ void setup() {
   
   // set the motion sensor input
   pinMode(PIR_PIN, INPUT);
-//  attachInterrupt(0, wakeUpNow, LOW); // use interrupt 0 (pin 2) and run function
   delay(animationDuration);
 }
 
