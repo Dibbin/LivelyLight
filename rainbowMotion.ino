@@ -22,12 +22,6 @@ unsigned long animationDuration= 5000;
 //   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
-// IMPORTANT: To reduce NeoPixel burnout risk, add 1000 uF capacitor across
-// pixel power leads, add 300 - 500 Ohm resistor on first pixel's data input
-// and minimize distance between Arduino and first pixel.  Avoid connecting
-// on a live circuit...if you must, connect GND first.
-
-
 //end config
 
 //vars
@@ -47,12 +41,6 @@ float percentComplete=0.0f;
 float percentRemaining=0.0f;
 bool isFadeIn = true;
 bool isAnimating = false;
-
-byte redPart;
-byte bluePart;
-byte greenPart;
-long animationColor = 0x000000;
-
 bool isMotionDetected = false;
 bool wasAnimating = false;
 
